@@ -10,23 +10,43 @@
 
 .introcontainer
   position: absolute
-  top: 150px
-  left: 0
-  margin: 0
-  padding-left: 15%
+  top: 35%
+  left: 15%
 
 .titlecontainer
-  width: 100%
   .landingtitle
     color: white
     text-align: left
-    font-size: 85px
+    font-size: 500%
     margin: 0
+    line-height: 25px
 
-.subtitlecontainer
-  width: 100%
+  .subtitlecontainer
+    width: 100%
+    .landingsubtitle
+      color: white
+      text-align: left
+      font-size: 100%
+      margin-top: 20px
+
+//when screen is below 600px, introcontainer will auto-center
+@media screen and (max-width: 600px)
+  #landing
+    display: flex
+    justify-content: center
+  //position:relative, top/left to 0; this resets the positioning for flex to work
+  .introcontainer
+    margin: auto
+    position: relative
+    top: 0
+    left: 0
+
+//when screen is below 370px, text size changes to accomodate max width
+@media screen and (max-width: 430px)
+  .titlecontainer
+    .landingtitle
+      font-size: 55px
+      line-height: 30px
+
   .landingsubtitle
-    color: white
-    text-align: left
-    font-size: 30px
-    margin-top: 20px
+    font-size: 20px
