@@ -575,49 +575,50 @@ section {
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center; }
-  #aboutme .center-container {
-    margin-top: 150px;
+  #aboutme .row-container {
+    padding: 28vh 0px 0px 0px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: center;
-        justify-content: center; }
-  #aboutme .section-left {
+        justify-content: center;
+    width: 70%; }
+  #aboutme .col-50 {
+    -ms-flex: 1;
+        flex: 1;
     width: 50%; }
-    #aboutme .section-left .sideimage {
+    #aboutme .col-50 .sideimage {
       width: 250px;
       height: 250px;
       background-color: #393636;
       border-radius: 10px;
       margin-left: 90px; }
-  #aboutme .section-right {
-    width: 50%; }
-    #aboutme .section-right .sidearticle {
-      margin-left: 40px;
+    #aboutme .col-50 .sidearticle {
+      margin-left: 20px;
       margin-right: 4%;
       font-size: 30px;
       font-family: 'opensanslight';
       letter-spacing: 0;
-      line-height: 1.8;
+      line-height: 1.5;
       color: #6f6f6f;
       padding: 0;
       padding-right: 1em; }
-      #aboutme .section-right .sidearticle em {
+      #aboutme .col-50 .sidearticle em {
         color: #393636; }
 
-@media screen and (max-width: 809px) {
-  #aboutme .center-container {
-    margin-top: 10px;
+@media screen and (max-width: 1081px) {
+  #aboutme .row-container {
+    margin: auto;
+    padding: 0;
+    width: 100%;
     -ms-flex-direction: column;
         flex-direction: column; }
-  #aboutme .section-left {
+  #aboutme .col-50 {
     width: 100%; }
-    #aboutme .section-left .sideimage {
+    #aboutme .col-50 .sideimage {
       margin: auto; }
-  #aboutme .section-right {
-    width: 100%; }
-    #aboutme .section-right .sidearticle {
+    #aboutme .col-50 .sidearticle {
       padding-top: 30px;
       margin: auto;
       text-align: center;
@@ -625,74 +626,39 @@ section {
       font-size: 25px;
       padding: 1em; } }
 
+@media screen and (max-width: 472px) {
+  #aboutme .col-50 .sidearticle {
+    font-size: 22px; } }
+
 #skills {
   background-color: #6f6f6f;
   position: relative;
-  width: 100%; }
-
-.section-center {
-  position: absolute;
-  top: 120px;
-  left: 15%;
-  right: 15%;
-  padding-top: 10px;
-  padding-bottom: 50px; }
-
-.centerarticle {
-  font-size: 30px;
-  font-family: 'opensanslight';
-  letter-spacing: 0;
-  line-height: 1.8;
-  text-align: center;
-  color: #dfdfdf; }
-
-.item-grid {
-  width: 70%;
-  position: absolute;
-  top: 200px;
-  margin-left: 19%;
-  margin-right: 19%; }
-  .item-grid .item {
-    display: inline-block;
-    position: relative;
-    width: 15%;
-    margin: 20px; }
-  .item-grid .itemimage {
-    display: inline-block;
-    padding: 0;
-    width: 100%;
-    background-color: #dfdfdf;
-    border-radius: 5px; }
-  .item-grid #bar1 {
-    position: absolute;
-    height: 180px;
-    top: 50px; }
-  .item-grid #bar2 {
-    position: absolute;
-    height: 230px;
-    top: 0; }
-  .item-grid #bar3 {
-    position: absolute;
-    height: 110px;
-    top: 120px; }
-  .item-grid #bar4 {
-    position: absolute;
-    height: 100px;
-    top: 130px; }
-  .item-grid .itemtext {
-    font-size: 30px;
-    font-family: 'opensanslight';
-    text-align: center;
-    color: #6f6f6f; }
-
-.guideline {
-  position: absolute;
-  height: 5px;
-  width: 80%;
-  background-color: #dfdfdf;
-  border-radius: 5px;
-  top: 460px;
-  left: 80px; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  #skills .column-container {
+    padding: 18vh 0px 0px 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    width: 70%; }
+    #skills .column-container .centerarticle {
+      font-size: 30px;
+      font-family: 'opensanslight';
+      letter-spacing: 0;
+      line-height: 1.8;
+      text-align: center;
+      color: #dfdfdf;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
 
 #dataviz {
   background-color: #dfdfdf; }
