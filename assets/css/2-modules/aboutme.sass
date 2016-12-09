@@ -2,35 +2,62 @@
   background-color: #dfdfdf
   background-size: cover
   position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
 
-.section-left
-  display: inline-block
-  width: 10%
-  float: left
-  margin-left: 15%
-  position: absolute
-  top: 200px
+  .center-container
+    margin-top: 150px
+    display: flex
+    flex-direction: row
+    justify-content: center
 
-.section-right
-  display: inline-block
-  width: 40%
-  float: right
-  margin-right: 15%
-  margin-top: 200px
+  .section-left
+    width: 50%
 
-.sideimage
-  text-align: center
-  width: 250px
-  height: 250px
-  background-color: #393636
-  border-radius: 10px
+    .sideimage
+      width: 250px
+      height: 250px
+      background-color: #393636
+      border-radius: 10px
+      margin-left: 90px
 
-.sidearticle
-  font-size: 30px
-  font-family: 'opensanslight'
-  letter-spacing: 0
-  line-height: 1.8
-  color: #6f6f6f
+  .section-right
+    width: 50%
 
-  em
-    color: #393636
+    .sidearticle
+      margin-left: 40px
+      margin-right: 4%
+      font-size: 30px
+      font-family: 'opensanslight'
+      letter-spacing: 0
+      line-height: 1.8
+      color: #6f6f6f
+      padding: 0
+      padding-right: 1em
+
+      em
+        color: #393636
+
+@media screen and (max-width: 809px)
+  #aboutme .center-container
+    margin-top: 10px
+    flex-direction: column
+
+  #aboutme
+    .section-left
+      width: 100%
+
+      .sideimage
+        margin: auto
+
+    .section-right
+      width: 100%
+
+      .sidearticle
+        padding-top: 30px
+        margin: auto
+        text-align: center
+        line-height: 40px
+        font-size: 25px
+        padding: 1em

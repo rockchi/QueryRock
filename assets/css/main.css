@@ -568,38 +568,62 @@ section {
 #aboutme {
   background-color: #dfdfdf;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  #aboutme .center-container {
+    margin-top: 150px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  #aboutme .section-left {
+    width: 50%; }
+    #aboutme .section-left .sideimage {
+      width: 250px;
+      height: 250px;
+      background-color: #393636;
+      border-radius: 10px;
+      margin-left: 90px; }
+  #aboutme .section-right {
+    width: 50%; }
+    #aboutme .section-right .sidearticle {
+      margin-left: 40px;
+      margin-right: 4%;
+      font-size: 30px;
+      font-family: 'opensanslight';
+      letter-spacing: 0;
+      line-height: 1.8;
+      color: #6f6f6f;
+      padding: 0;
+      padding-right: 1em; }
+      #aboutme .section-right .sidearticle em {
+        color: #393636; }
 
-.section-left {
-  display: inline-block;
-  width: 10%;
-  float: left;
-  margin-left: 15%;
-  position: absolute;
-  top: 200px; }
-
-.section-right {
-  display: inline-block;
-  width: 40%;
-  float: right;
-  margin-right: 15%;
-  margin-top: 200px; }
-
-.sideimage {
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  background-color: #393636;
-  border-radius: 10px; }
-
-.sidearticle {
-  font-size: 30px;
-  font-family: 'opensanslight';
-  letter-spacing: 0;
-  line-height: 1.8;
-  color: #6f6f6f; }
-  .sidearticle em {
-    color: #393636; }
+@media screen and (max-width: 809px) {
+  #aboutme .center-container {
+    margin-top: 10px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  #aboutme .section-left {
+    width: 100%; }
+    #aboutme .section-left .sideimage {
+      margin: auto; }
+  #aboutme .section-right {
+    width: 100%; }
+    #aboutme .section-right .sidearticle {
+      padding-top: 30px;
+      margin: auto;
+      text-align: center;
+      line-height: 40px;
+      font-size: 25px;
+      padding: 1em; } }
 
 #skills {
   background-color: #6f6f6f;
