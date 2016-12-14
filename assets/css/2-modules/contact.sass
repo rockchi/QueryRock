@@ -1,45 +1,49 @@
 #contact
   position: relative
   background-color: #dfdfdf
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
 
-.contact-container
-  position: absolute
-  top: 50px
-  width: 70%
-  margin-left: 15%
-  margin-right: 15%
+.row-container
+  padding: 28vh 0px 0px 0px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 60%
 
-.contact-left
+.col-50
+  flex: 1
+  width: 50%
+  //for items in col-50 on the left
+  .contact-container-left
+    display: block
+    margin-left: 5%
+
+    .contact-header h3
+      position: relative
+      font-size: 40px
+      color: grey
+
+      span
+        color: #393636
+
+      .textadjust
+        display: inline
+        position: absolute
+        left: 80px
+
+    .contact-sub h4
+      color: grey
+      position: relative
+      top: 30px
+
+//for the col-50 on the right
+
+.contact-container-right
   display: block
-  position: absolute
-  margin-left: 10%
-  width: 300px
-  padding-top: 50px
-  padding-bottom: 50px
-
-  .contact-header h3
-    position: relative
-    font-size: 40px
-    color: grey
-
-    span
-      color: #393636
-
-    div.textadjust
-      display: inline
-      position: absolute
-      left: 80px
-
-  div.contact-sub
-    position: relative
-    top: 30px
-
-.contact-right
-  display: block
-  float: right
-  margin-right: 15%
-  width: 300px
-  padding-top: 80px
+  margin-left: 5%
 
   .contactitem
     list-style: none
@@ -56,3 +60,27 @@
       font-size: 40px
     p
       line-height: 0
+
+
+//At screen width of 1115, two column collapses into 1
+@media screen and (max-width: 1020px)
+  #contact .row-container
+    margin: auto
+    padding: 0
+    width: 100%
+    flex-direction: column
+
+    .col-50
+      display: flex
+      justify-content: center
+      width: 100%
+
+      .contact-container-right
+        padding-top: 20px
+        text-align: center
+        margin: 0
+        width: 60%
+        min-width: 250px
+
+        .contactlist
+          padding: 0
