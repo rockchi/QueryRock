@@ -681,7 +681,8 @@ section {
       font-size: 20px; } }
 
 #dataviz {
-  background-color: #dfdfdf; }
+  background-color: #dfdfdf;
+  position: relative; }
 
 .grid {
   width: 100%;
@@ -822,7 +823,6 @@ figure.effect-lily:hover p {
 #contact {
   position: relative;
   background-color: #dfdfdf;
-  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -860,6 +860,7 @@ figure.effect-lily:hover p {
     .col-50 .contact-container-left .contact-sub h4 {
       color: grey;
       position: relative;
+      font-size: 20px;
       top: 30px; }
 
 .contact-container-right {
