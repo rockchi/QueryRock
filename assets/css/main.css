@@ -680,146 +680,6 @@ section {
     #skills .column-container .centerarticle p {
       font-size: 20px; } }
 
-#dataviz {
-  background-color: #dfdfdf;
-  position: relative; }
-
-.grid {
-  width: 100%;
-  padding-top: 100px; }
-
-.grid figure {
-  position: relative;
-    position-max-height: 301px;
-    position-height: 50%;
-  width: 25%;
-  float: left;
-  overflow: hidden;
-  margin: 0;
-  background: #505050;
-  text-align: center;
-  cursor: pointer; }
-
-.grid figure img {
-  opacity: 0.9; }
-
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.grid figure figcaption p {
-  width: 75%; }
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none; }
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 100%;
-    height-color: white; }
-
-.grid figure figcaption a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  opacity: 0;
-    opacity-color: white; }
-
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-    font-weight-color: white; }
-
-.grid figure h2 span {
-  font-weight: 800; }
-
-.grid figure h2,
-.grid figure p {
-  margin: 0; }
-
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%; }
-
-figure.effect-lily img {
-  opacity: 0.7;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0); }
-
-figure.effect-lily figcaption {
-  text-align: left; }
-
-figure.effect-lily figcaption > div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 2em;
-  width: 100%;
-  height: 50%; }
-
-figure.effect-lily h2,
-figure.effect-lily p {
-  -webkit-transform: translate3d(0, 40px, 0);
-  transform: translate3d(0, 40px, 0); }
-
-figure.effect-lily h2 {
-  color: white;
-  font-size: 30px; }
-
-figure.effect-lily h2 {
-  transition: -webkit-transform 0.35s;
-  transition: transform 0.35s; }
-
-figure.effect-lily p {
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  transition: opacity 0.2s, -webkit-transform 0.35s;
-  transition: opacity 0.2s, transform 0.35s; }
-
-figure.effect-lily:hover img,
-figure.effect-lily:hover p {
-  opacity: 1; }
-
-figure.effect-lily:hover img,
-figure.effect-lily:hover h2,
-figure.effect-lily:hover p {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-figure.effect-lily:hover p {
-  transition-delay: 0.05s;
-  transition-duration: 0.35s; }
-
-#projects {
-  background-color: #dfdfdf; }
-
-.grid {
-  width: 100%;
-  padding-top: 100px; }
-
-.grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 0;
-  max-height: 301px;
-    max-height-height: 50%;
-  width: 25%;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer; }
-
 #contact {
   position: relative;
   background-color: #dfdfdf;
@@ -902,6 +762,50 @@ figure.effect-lily:hover p {
         min-width: 250px; }
         #contact .row-container .col-50 .contact-container-right .contactlist {
           padding: 0; } }
+
+#test {
+  background-color: #dfdfdf;
+  position: relative;
+  width: 100%; }
+  #test .section-header {
+    width: 100%;
+    height: 90px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: flex-wrap;
+        justify-content: flex-wrap; }
+    #test .section-header h4 {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      color: grey;
+      font-size: 25px;
+      padding-top: 10px; }
+    #test .section-header p {
+      width: 100%;
+      text-align: center;
+      font-size: 25px; }
+  #test .grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #test .grid .postthumb {
+      display: block;
+      overflow: hidden;
+      width: 25%; }
+      #test .grid .postthumb img {
+        width: 100%;
+        height: 100%;
+        border: none; }
+
+@media screen and (max-width: 900px) {
+  #test .grid .postthumb {
+    width: 50%; } }
+
+@media screen and (max-width: 500px) {
+  #test .grid .postthumb {
+    width: 100%; } }
 
 #footer {
   background-color: #393636;

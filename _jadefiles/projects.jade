@@ -1,65 +1,11 @@
 section#projects
   div.grid
+    {% for post in site.posts limit:8 %}
     figure.effect-lily
-      img(src="assets/img/1.jpg" alt="img1")
+      img(src="assets/img/posts/thumb/{{post.thumbnail}}" alt="img1")
       figcaption
         div
-          h2 Nice <span>Lily</span>
+          h2.name {{post.title}}
           p Lily likes to play with crayons and pencils
           a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/2.jpg" alt="img2")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/3.jpg" alt="img3")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/4.jpg" alt="img4")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/5.jpg" alt="img5")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/6.jpg" alt="img6")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/7.jpg" alt="img7")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
-
-    figure.effect-lily
-      img(src="assets/img/8.jpg" alt="img8")
-      figcaption
-        div
-          h2 Nice <span>Lily</span>
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
+    {% endfor %}
