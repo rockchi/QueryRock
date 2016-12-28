@@ -491,30 +491,51 @@ section {
   height: 100vh;
   background-color: white; }
 
-.desktopnav {
+nav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 150px; }
-
-.desktopnavlist {
-  list-style: none;
-  float: right; }
-
-.navitem {
-  display: inline-block;
-  font-size: 18px;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0em;
-  line-height: 1.8;
-  font-weight: 500; }
-  .navitem a {
-    color: #424242; }
-  .navitem a:hover {
-    text-decoration: underline; }
+  height: 60px;
+  border-bottom: 1px solid grey;
+  background-color: white; }
+  nav .logobox {
+    float: left;
+    width: 185px;
+    height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    nav .logobox .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: grey; }
+  nav .buttonbox {
+    float: right;
+    width: 110px;
+    height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    nav .buttonbox span.bar {
+      content: "";
+      display: block;
+      background-color: grey;
+      height: 5px;
+      border-radius: 2px;
+      width: 65px;
+      margin: 5px; }
 
 #landing {
   background-image: url("/assets/img/background.jpeg");
@@ -769,7 +790,7 @@ section {
   width: 100%; }
   #test .section-header {
     width: 100%;
-    height: 90px;
+    height: 160px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: flex-wrap;
@@ -780,7 +801,7 @@ section {
       margin: 0;
       color: grey;
       font-size: 25px;
-      padding-top: 10px; }
+      padding-top: 110px; }
     #test .section-header p {
       width: 100%;
       text-align: center;

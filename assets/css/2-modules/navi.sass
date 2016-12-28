@@ -1,26 +1,42 @@
-.desktopnav
+nav
   position: fixed
   top: 0
   left: 0
   z-index: 9999
   width: 100%
-  height: 150px
+  height: 60px
+  border-bottom: 1px solid grey
+  background-color: white
 
-.desktopnavlist
-  list-style: none
-  float: right
+  .logobox
+    float: left
+    width: 185px
+    height: 60px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
 
-.navitem
-  display: inline-block
-  font-size: 18px
-  padding: 10px
-  text-transform: uppercase
-  letter-spacing: 0em
-  line-height: 1.8
-  font-weight: 500
+    .logo
+      font-size: 25px
+      font-weight: bold
+      color: grey
 
-  a
-    color: #424242
 
-  a:hover
-    text-decoration: underline
+  .buttonbox
+    float: right
+    width: 110px
+    height: 60px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    span.bar
+      content: ""
+      display: block
+      background-color: grey
+      height: 5px
+      border-radius: 2px
+      width: 65px
+      margin: 5px
