@@ -493,13 +493,16 @@ section {
 
 nav {
   position: fixed;
+  display: block;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
   height: 60px;
   border-bottom: 1px solid grey;
-  background-color: white; }
+  background-color: white;
+  transition: all 0.3s;
+  opacity: 1; }
   nav .logobox {
     float: left;
     width: 185px;
@@ -517,6 +520,7 @@ nav {
       font-weight: bold;
       color: grey; }
   nav .buttonbox {
+    display: block;
     float: right;
     width: 110px;
     height: 60px;
@@ -528,14 +532,43 @@ nav {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-    nav .buttonbox span.bar {
-      content: "";
-      display: block;
-      background-color: grey;
-      height: 5px;
-      border-radius: 2px;
-      width: 65px;
-      margin: 5px; }
+    nav .buttonbox .togglebutton {
+      margin-top: 5px; }
+      nav .buttonbox .togglebutton span.bar {
+        content: "";
+        display: block;
+        background-color: grey;
+        height: 4px;
+        border-radius: 2px;
+        width: 50px;
+        margin: 0 0 6px 0;
+        padding: 0; }
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8; }
+  .menu ul {
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 60px; }
+    .menu ul li {
+      font-size: 30px;
+      font-weight: 600px;
+      padding: 0 0 25px;
+      margin: 0; }
+      .menu ul li a {
+        color: white; }
 
 #landing {
   background-image: url("/assets/img/background.jpeg");
