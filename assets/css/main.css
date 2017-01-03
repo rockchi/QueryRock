@@ -552,15 +552,13 @@ nav {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.8; }
+  opacity: 0.9; }
   .menu ul {
     list-style: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
     padding-top: 60px; }
     .menu ul li {
       font-size: 30px;
