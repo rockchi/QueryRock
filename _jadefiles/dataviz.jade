@@ -1,11 +1,9 @@
-section#dataviz
+div#dataviz
+  div.dataviz-header
+    div.dataviz-header-wrap
+      h4 Data Visualizations
   div.grid
     {% for post in site.posts limit:8 %}
-    figure.effect-lily
+    div.postthumb
       img(src="assets/img/posts/thumb/{{post.thumbnail}}" alt="img1")
-      figcaption
-        div
-          h2.name {{post.title}}
-          p Lily likes to play with crayons and pencils
-          a(href="#") View more
     {% endfor %}

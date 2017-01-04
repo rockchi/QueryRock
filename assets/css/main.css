@@ -569,7 +569,8 @@ nav {
         color: white; }
 
 .sticky {
-  opacity: 1; }
+  opacity: 1;
+  transition: opacity 0.5s; }
 
 #landing {
   background-image: url("/assets/img/background.jpeg");
@@ -820,48 +821,49 @@ nav {
         #contact .row-container .col-50 .contact-container-right .contactitem {
           padding: 0; } }
 
-#test {
+#dataviz {
   background-color: #dfdfdf;
   position: relative;
   width: 100%; }
-  #test .section-header {
+  #dataviz .dataviz-header {
+    box-sizing: border-box;
     width: 100%;
-    height: 160px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: flex-wrap;
-        justify-content: flex-wrap; }
-    #test .section-header h4 {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-      color: grey;
-      font-size: 25px;
-      padding-top: 110px; }
-    #test .section-header p {
-      width: 100%;
-      text-align: center;
-      font-size: 25px; }
-  #test .grid {
+    height: 155px;
+    padding-top: 60px;
+    margin: 0;
+    background-color: #6f6f6f; }
+    #dataviz .dataviz-header .dataviz-header-wrap {
+      background-color: #dfdfdf;
+      height: 100px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      #dataviz .dataviz-header .dataviz-header-wrap h4 {
+        color: grey;
+        font-size: 25px; }
+  #dataviz .grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    #test .grid .postthumb {
+    #dataviz .grid .postthumb {
       display: block;
       overflow: hidden;
       width: 25%; }
-      #test .grid .postthumb img {
+      #dataviz .grid .postthumb img {
         width: 100%;
         height: 100%;
         border: none; }
 
 @media screen and (max-width: 900px) {
-  #test .grid .postthumb {
+  #dataviz .grid .postthumb {
     width: 50%; } }
 
 @media screen and (max-width: 500px) {
-  #test .grid .postthumb {
+  #dataviz .grid .postthumb {
     width: 100%; } }
 
 #footer {
